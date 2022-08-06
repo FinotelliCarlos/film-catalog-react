@@ -16,7 +16,7 @@ export type FilmProps = {
 export function Films() {
   const [films, setFilms] = useState<FilmProps[]>([])
   const [numberOfPages, setNumberOfPages] = useState()
-  const [page, setPage] = useState()
+  const [page, setPage] = useState(1)
 
   useEffect(() => {
     axios
